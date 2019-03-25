@@ -1,0 +1,36 @@
+.card{
+    border-radius: 10px;
+    border: solid 0.5px #f4f4f4 !important;
+    background-color: #ffffff !important;
+}
+.card .card-header{
+    border-bottom: none !important;
+}
+.override-card-title{
+    height: 18px;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #081611;
+    transition:  all 1s ease;
+}
+.override-card-title.active{
+    color: #00c45a;
+}
+.override-card-title.active img{
+    transition:  all 0.05s ease-in-out;
+}
+.card-header {
+    margin-bottom: 0;
+    border: 1px solid #f4f4f4;
+    background-color: #ffffff !important;
+    color: #081611;
+}
+.override-card-body{
+    border-radius: 0;
+    border: solid 1px #f4f4f4;
+    background-color: #ffffff;
+}
