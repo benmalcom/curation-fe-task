@@ -45,9 +45,11 @@ p {
     font-weight: bold;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+.nav-pills .nav-link.active,
+.nav-pills .nav-link:hover,
+.nav-pills .show > .nav-link {
     background-color: transparent;
-    color: #00c45a;
+    color: #00c45a !important;
 }
 
 .nav-pills {

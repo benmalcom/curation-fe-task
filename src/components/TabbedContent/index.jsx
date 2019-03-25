@@ -9,9 +9,9 @@ const TabbedContent = ({tabHeadings}) => {
 		const [activeTab, setActiveTab] = useState(1);
 		return <Fragment>
 				<Nav pills className="nav-pills">
-						{tabHeadings.map(({name, id}) => <NavItem>
+						{tabHeadings.map(({name, id}) => <NavItem key={id}>
 								<NavLink
-										className={`pointer-cursor ${activeTab === id ? 'active' : ''}`}
+										className={`pointer-cursor nav-link ${activeTab === id ? 'active' : ''}`}
 										onClick={() => setActiveTab(id)}
 								>
 										{name}
