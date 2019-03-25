@@ -7,6 +7,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: #081611;
 }
+.wrapper{
+    margin-left: 30px;
+}
 
 h1 {
     font-size: 28px;
@@ -31,7 +34,6 @@ p {
 }
 
 .p-card {
-    height: 100%;
     border-radius: 10px;
     box-shadow: 0 21px 17px 0 rgba(0, 0, 0, 0.03);
     border: solid 1px #f4f4f4;
@@ -77,6 +79,28 @@ p {
 .p-card.right {
     margin-left: 30px;
     margin-top: 6.6rem;
+    position: relative;
+}
+.p-card.right .arrow-left{
+    position: absolute;
+    left: -8px;
+    top: 25px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid #ffffff;
+}
+
+.p-card.right .arrow-up{
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #ffffff;
 }
 
 p.address-item{
@@ -99,6 +123,13 @@ p.address-item{
 }
 /*Tablet*/
 @media (max-width: 768px) {
+    .wrapper{
+        margin: 0;
+    }
+    .p-card{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
     .p-card.right {
         margin-left: 0;
         margin-top: 2rem;
@@ -107,11 +138,15 @@ p.address-item{
 
 /*Mobile*/
 @media (max-width: 766px) {
-    .p-card,.p-card.right  {
-        margin: 0 20px;
-        overflow: hidden;
+    .wrapper{
+        margin: 0;
     }
-
+    .p-card  {
+        margin: 0 20px;
+    }
+    .p-card.right{
+        margin: 0 auto;
+    }
     .p-card.right, .mt-mobile {
         margin-top: 2rem;
     }

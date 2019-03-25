@@ -8,5 +8,9 @@ const Notes = ({title, content}) => (<>
 Notes.propTypes = {
 		title: PropTypes.string.isRequired,
 		content: PropTypes.string.isRequired,
+		className: PropTypes.string,
+};
+Notes.propTypes = {
+		className: '',
 };
 export default Notes;

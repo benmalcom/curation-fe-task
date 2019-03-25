@@ -10,7 +10,7 @@ import user2Img from '../../assets/images/user@2x.png';
 import user3Img from '../../assets/images/user@3x.png';
 
 const App = ({ title, subHead}) => (
-		<div className="container">
+		<Col lg="11" sm={12} className="wrapper">
 				<Row>
 						<Col lg={6} className="col-lg-6 p-card">
 								<h1>{title}</h1>
@@ -26,16 +26,20 @@ const App = ({ title, subHead}) => (
 										{name: 'Subscribe', id: 2}]
 								}/>
 						</Col>
-						<Col lg={5} className="p-card right">
-								<Notes
-										title="Notes"
-										content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitursagittis sit amet sem eget gravida.
+						<Col lg={6}>
+								<Col lg={11} className="p-card right">
+										<div className="arrow-up d-lg-none"/>
+										<div className="arrow-left d-none d-lg-block"/>
+										<Notes
+												title="Notes"
+												content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitursagittis sit amet sem eget gravida.
 										Duis tellus est, pharetra ac bibendum eu, consequat sed dolor. Duis mollis, augue adignissim
 										congue, mi felis interdum sapien, nec pellentesque eros erat sed diam. Sed pharetra lobortis interdum. "
-								/>
+										/>
+								</Col>
 						</Col>
 				</Row>
-		</div>
+		</Col>
 );
 App.propTypes = {
 		title: PropTypes.string.isRequired,
