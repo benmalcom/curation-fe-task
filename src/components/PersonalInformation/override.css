@@ -1,0 +1,13 @@
+.p-card .title {
+    color: #ffffff;
+    border-radius: 3px 3px 0 0;
+    background-color: #00c45a;
+    padding: 1.1rem;
+    margin-top: 1.7rem;
+    margin-bottom: 0;
+}
+p.personal-info{
+    color: #081611;
+    line-height: 1.58;
+    margin-bottom: 0;
+}
