@@ -1,0 +1,36 @@
+
+.tab-pane input {
+    position: relative;
+    height: 44px;
+    border-radius: 22px;
+    background-color: #f9f9fa;
+    border: none;
+    font-size: 11px;
+    padding-left: 1rem;
+}
+
+.tab-pane input::placeholder {
+    color: #c0c3c8;
+}
+
+.tab-pane input:focus {
+    background-color: #081611;
+    border-color: transparent;
+    box-shadow: none;
+    outline: 0 none;
+}
+
+.tab-pane input:focus::placeholder {
+    color: #ffffff;
+}
+
+.tab-pane form {
+    position: relative;
+}
+
+
+.tab-pane form .btn-custom {
+    position: absolute;
+    top: 5px;
+    right: 7px;
+}
